@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <dialog open>
+      <figure class="star-illustration">
+        <img src="./images/icon-star.svg" alt="star icon" />
+      </figure>
+      <h1>How did we do?</h1>
+      <p class="text-info">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+
+      <form class="rating-form">
+        <!-- Rating state start -->
+        <label title="1 star">
+          <input type="radio" name="rating" value="1" />1</label
+        >
+        <label title="2 stars">
+          <input type="radio" name="rating" value="2" />2</label
+        >
+        <label title="3 stars">
+          <input type="radio" name="rating" value="3" />3</label
+        >
+        <label title="4 stars">
+          <input type="radio" name="rating" value="4" />4</label
+        >
+        <label title="5 stars">
+          <input type="radio" name="rating" value="5" />5</label
+        >
+        <!-- Rating state end -->
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Thank you state start -->
+      <div style="display: none">
+        You selected
+        <!-- Add rating here -->
+        out of 5 Thank you! We appreciate you taking the time to give a rating.
+        If you ever need more support, don’t hesitate to get in touch!
+      </div>
+    </dialog>
+    <!-- Thank you state end -->
+  </body>
+</html>

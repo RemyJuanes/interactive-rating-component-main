@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --orange500: hsl(25, 97%, 53%);
+  --grey500: hsl(217, 12%, 63%);
+  --grey900: hsl(213, 19%, 18%);
+  --grey950: hsl(216, 12%, 8%);
+  --w40: 40px;
+  --border-radius: 20px;
+}
+
+p {
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--grey950);
+  color: var(--grey500);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Overpass', sans-serif;
+}
+
+dialog {
+  background: linear-gradient(#222933, #181e26);
+  color: inherit;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.star-illustration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: var(--w40);
+  height: var(--w40);
+  border-radius: 50%;
+  background-color: var(--grey900);
+  margin-bottom: 2em;
+}
+
+h1 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.text-info {
+  padding-bottom: 2em;
+}
+
+.rating-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--grey900);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+label > input[type='radio'] {
+  display: none;
+}
+
+button[type='submit'] {
+  background-color: var(--orange500);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+@media (max-width: 375px) {
+}
