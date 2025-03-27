@@ -19,6 +19,10 @@ p {
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-color: var(--grey950);
   color: var(--grey500);
@@ -26,9 +30,9 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
   font-family: 'Overpass', sans-serif;
+  padding: 20px;
 }
 
 dialog {
@@ -109,9 +113,9 @@ button[type='submit'] {
   font-weight: 700;
   letter-spacing: 0.25em;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 25px;
 }
 
 button[type='submit']:hover,
@@ -122,4 +126,18 @@ button[type='submit']:active {
 }
 
 @media (max-width: 375px) {
+  dialog {
+    padding: 30px 20px;
+    margin: 0 20px;
+  }
+
+  .star-illustration {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1em;
+  }
+
+  .text-info {
+    padding-bottom: 1.5em;
+  }
 }
