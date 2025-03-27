@@ -85,11 +85,24 @@ label {
   font-size: 15px;
 }
 
+label:hover,
+label:focus,
+label:active {
+  background-color: var(--orange500);
+  color: var(--grey900);
+}
+
 label > input[type='radio'] {
   display: none;
 }
 
+label:has(input[type='radio']:checked) {
+  background-color: white;
+  color: var(--grey900);
+}
+
 button[type='submit'] {
+  cursor: pointer;
   background-color: var(--orange500);
   text-transform: uppercase;
   text-align: center;
@@ -99,6 +112,13 @@ button[type='submit'] {
   padding: 10px;
   border: none;
   border-radius: var(--border-radius);
+}
+
+button[type='submit']:hover,
+button[type='submit']:focus,
+button[type='submit']:active {
+  background-color: white;
+  color: var(--grey900);
 }
 
 @media (max-width: 375px) {
