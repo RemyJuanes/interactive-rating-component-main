@@ -91,13 +91,21 @@ label {
 
 label:hover,
 label:focus,
-label:active {
+label:focus-within {
   background-color: var(--orange500);
   color: var(--grey900);
 }
 
 label > input[type='radio'] {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 label:has(input[type='radio']:checked) {

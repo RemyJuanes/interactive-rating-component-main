@@ -17,7 +17,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <dialog open>
+    <dialog open autofocus>
       <figure class="star-illustration">
         <img src="./images/icon-star.svg" alt="star icon" />
       </figure>
@@ -27,8 +27,7 @@
         appreciated to help us improve our offering!
       </p>
 
-      <form class="rating-form">
-        <!-- Rating state start -->
+      <form class="rating-form" method="dialog">
         <label title="1 star">
           <input type="radio" name="rating" value="1" />1</label
         >
@@ -44,9 +43,9 @@
         <label title="5 stars">
           <input type="radio" name="rating" value="5" />5</label
         >
-        <!-- Rating state end -->
         <button type="submit">Submit</button>
       </form>
+    </dialog>
 
       <!-- Thank you state start -->
       <div style="display: none">
