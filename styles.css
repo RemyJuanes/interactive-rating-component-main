@@ -113,7 +113,7 @@ label:has(input[type='radio']:checked) {
   color: var(--grey900);
 }
 
-button[type='submit'] {
+input[type='submit'] {
   cursor: pointer;
   background-color: var(--orange500);
   text-transform: uppercase;
@@ -126,11 +126,36 @@ button[type='submit'] {
   border-radius: 25px;
 }
 
-button[type='submit']:hover,
-button[type='submit']:focus,
-button[type='submit']:active {
+input[type='submit']:hover,
+input[type='submit']:focus,
+input[type='submit']:active {
   background-color: white;
   color: var(--grey900);
+}
+
+.thank-you-state {
+  padding-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  color: var(--orange500);
+  background-color: var(--grey900);
+  padding: 8px 20px 5px;
+  border-radius: 20px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: inline-block;
+}
+
+.star {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 375px) {
